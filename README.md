@@ -1,11 +1,11 @@
-# ![aws](https://github.com/julien-muke/Search-Engine-Website-using-AWS/assets/110755734/01cd6124-8014-4baa-a5fe-bd227844d263) How to Deploy WordPress Website on AWS using EC2, RDS, ALB and more (Part1).
+# ![aws](https://github.com/julien-muke/Search-Engine-Website-using-AWS/assets/110755734/01cd6124-8014-4baa-a5fe-bd227844d263) How to Deploy WordPress Website on AWS using EC2, RDS, ALB and more (Part2).
 
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Deploying a WordPress website on AWS involves leveraging various AWS services to ensure scalability, reliability, and security. In this guide, we will walk you through the process of setting up a WordPress site using Amazon EC2 for hosting, Amazon RDS for database management, and Amazon Application Load Balancer (ALB) for efficient traffic distribution.
+This demo is the the second part of the tutorial on Deploying a WordPress website on AWS. In the first part we covered Amazon EC2 for hosting, Amazon RDS for database management.
 
-Additionally, we will utilize Amazon Route 53 for domain name management and DNS routing. This comprehensive approach not only simplifies the deployment process but also equips your WordPress site with the robust infrastructure needed to handle varying levels of traffic, ensuring optimal performance and uptime.
+In the second part, we will utilize Amazon Application Load Balancer (ALB) for efficient traffic distribution, Amazon Route 53 for domain name management and DNS routing and get a free SSL certificate and point our domain address to Load Balancer. This comprehensive approach not only simplifies the deployment process but also equips your WordPress site with the robust infrastructure needed to handle varying levels of traffic, ensuring optimal performance and uptime.
 
 
 ## <a name="design">📐 Architecture Diagram</a>
@@ -29,14 +29,10 @@ Additionally, we will utilize Amazon Route 53 for domain name management and DNS
 
 The procedure for deploying this architecture on AWS consists of the following steps:
 
-* Step 1. [Create EC2 for WordPress](#create-ec2-for-wordpress)
-* Step 2. [Connect to EC2 instance via Instance connect](#connect-ec2-to-instance)
-* Step 3. [Connect to EC2 instance via SSH client (local Terminal)](#connect-ec2-to-ssh)
-* Step 4. [Install Apache on Amazon Linux 2](#install-apache)
-* Step 5. [Install PHP & MariaDB on Amazon Linux 2](#install-php-mariadb)
-* Step 6. [Download the latest WordPress zip file](#download-wordpress)
-* Step 7. [Create RDS instance for WordPress website](#rds-wp)
-* Step 8. [Connect RDS and EC2 instance](#connect-rds-ec2)
-* Step 9. [WordPress Installation on Amazon Linux 2 EC2 instance](#install-wp-on-ec2)
+* Step 1. [Domain transfer from 3rd party provider](#domain-transfer)
+* Step 2. [Free AWS SSL certificate](#ssl-certificate)
+* Step 3. [Point our domain address to Load Balancer](#domain-to-lb)
 
-## <a name="create-ec2-for-wordpress">➡️ Step 1 - Create EC2 for WordPress</a>
+
+## <a name="create-ec2-for-wordpress">➡️ Step 1 - Transer Domain Name to AWS Route 53</a>
+
