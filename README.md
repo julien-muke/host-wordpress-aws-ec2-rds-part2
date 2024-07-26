@@ -36,5 +36,5 @@ The procedure for deploying this architecture on AWS consists of the following s
 * Step 5. [Point our domain address to Load Balancer](#domain-to-lb)
 
 
-## <a name="create-ec2-for-wordpress">➡️ Step 1 - Transer Domain Name to AWS Route 53</a>
+## <a name="create-ec2-for-wordpress">➡️ Step 1 - Create Application Load Balancer on AWS</a>
 
