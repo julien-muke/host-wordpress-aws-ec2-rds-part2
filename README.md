@@ -110,3 +110,5 @@ To configure your load balancer:
 * A Security groups
 * A Network mapping with 1 VPC and 3 availabity zones
 * 1 Target group 
+
+![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-17-15_40_20 copy 4](https://github.com/user-attachments/assets/4e2fba1a-55c8-4468-9d4c-79f50db7ea8c)
