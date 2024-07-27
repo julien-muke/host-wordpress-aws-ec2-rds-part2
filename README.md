@@ -105,10 +105,24 @@ To configure your load balancer:
 
 
 25. Keep the rest as default.
-26. Review the load balancer configurations, in my case we've created:
+26. Review the load balancer configurations, we've created:
 * An Internet-facing Load Balancer
 * A Security groups
 * A Network mapping with 1 VPC and 3 availabity zones
 * 1 Target group 
 
 ![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-17-15_40_20 copy 4](https://github.com/user-attachments/assets/4e2fba1a-55c8-4468-9d4c-79f50db7ea8c)
+
+The Target group will be associated to the Load Balancer, and the EC2 instance will be added to the Target group and make sure the EC2 instance is healthy, lastly our load balancer will be in active State.
+
+Let's test our Application Load Balancer, copy DNS name of the load balancer and and open it on a new browser.
+
+![alb](https://github.com/user-attachments/assets/d9efa1aa-2456-497f-8a83-9e1fb2e6b7f0)
+
+As you can see below we can now access our WordPress site from Load Balancer DNS.
+
+
+![wp](https://github.com/user-attachments/assets/cee5c9d2-5058-4862-ab66-f0a94dd4f46b)
+
+
+
