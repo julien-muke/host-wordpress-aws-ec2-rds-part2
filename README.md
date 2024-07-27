@@ -71,7 +71,7 @@ To configure your load balancer:
 ![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-17-15_40_20 copy 2](https://github.com/user-attachments/assets/13d0d131-c053-4587-a3c7-01faf0e1e508)
 
 
-11. Enter Security group name `wP_lb-SG`
+11. Enter Security group name `wp_lb-SG`
 12. Make sure your default VPC is selected
 13. For Inbound rules, we are going to create 2 new rules, one for `HTTP` and `HTTPS` Rules with source of `0.0.0.0/0`
 14. Keep Outbound rules as default
@@ -82,8 +82,31 @@ To configure your load balancer:
 
 
 17. Go back to Application Load Balancer and select the new `wP_lb-SG` security group.
-18. Ubder Listeners and routing, a listener is a process that checks for connection requests using the port and protocol you configure, let's create a new target group, choose Create target group.
+18. Under Listeners and routing, a listener is a process that checks for connection requests using the port and protocol you configure, let's create a new target group, choose Create target group.
 
 ![Screenshot 2024-07-27 at 11 45 43](https://github.com/user-attachments/assets/14a6096f-9ef4-4659-ab55-ff7d210959bd)
 
-19. 
+19. Choose Instances as target type 
+20. Enter Target group name `wp-site-TG`
+21. Select your default VPC and keep everything as default, click Next
+
+![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-17-15_20_09](https://github.com/user-attachments/assets/5a723731-0e23-4b96-a676-e550ebc9ba9b)
+
+22. Under Register targets, let's select the EC2 instance and click on Include as pending below.
+23. Once the EC2 instance is add to the Review targets, click Create target group.
+
+![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-17-15_21_54](https://github.com/user-attachments/assets/7fa9d45d-4e07-44ba-99f1-d1b73b6d2c8e)
+
+
+24. We have created our WordPress site Target group and currently it's not associated with any load  balancer, let's add it to our load balances. Back to Application Load Balancer select the new target group `wp-site-TG`
+
+
+![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-17-15_40_20 copy 3](https://github.com/user-attachments/assets/8964594a-07f4-47e6-b670-ded627517b25)
+
+
+25. Keep the rest as default.
+26. Review the load balancer configurations, in my case we've created:
+* An Internet-facing Load Balancer
+* A Security groups
+* A Network mapping with 1 VPC and 3 availabity zones
+* 1 Target group 
