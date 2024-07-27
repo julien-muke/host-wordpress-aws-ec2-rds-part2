@@ -66,4 +66,22 @@ To configure your load balancer:
 ![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-17-15_40_20 copy](https://github.com/user-attachments/assets/4c61b139-077c-4ff4-962c-a6ea0c86c54a)
 
 
-10. 
+10. For Security groups, let's create a new one. 
+
+![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-17-15_40_20 copy 2](https://github.com/user-attachments/assets/13d0d131-c053-4587-a3c7-01faf0e1e508)
+
+
+11. Enter Security group name `wP_lb-SG`
+12. Make sure your default VPC is selected
+13. For Inbound rules, we are going to create 2 new rules, one for `HTTP` and `HTTPS` Rules with source of `0.0.0.0/0`
+14. Keep Outbound rules as default
+15. Use a tag as a label that you assign to an AWS resource with Key=`Name` and Value=`LB-SG`
+16. Click Create security group
+
+![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-17-15_15_26](https://github.com/user-attachments/assets/5367e45c-3574-4487-a120-1c8fe1c318bb)
+
+
+17. Go back to Application Load Balancer and select the new `wP_lb-SG` security group.
+18. Ubder Listeners and routing, a listener is a process that checks for connection requests using the port and protocol you configure, let's create a new target group, choose Create target group.
+
+![Screenshot 2024-07-27 at 11 45 43](https://github.com/user-attachments/assets/14a6096f-9ef4-4659-ab55-ff7d210959bd)
