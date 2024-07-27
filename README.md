@@ -125,7 +125,7 @@ As you can see below we can now access our WordPress site from Load Balancer DNS
 ![wp](https://github.com/user-attachments/assets/cee5c9d2-5058-4862-ab66-f0a94dd4f46b)
 
 
-Next, we need to edit the security group in such a way that our application load balancer can only be accessed HTTP and HTTPS traffic from our load  balancer Security Group and not from all IP addresses(`0.0.0.0/0`).
+Next, we need to edit the security group in such a way that our application load balancer can only be accessed from HTTP and HTTPS traffic from our load  balancer Security Group and not from all IP addresses(`0.0.0.0/0`).
 
 * Go to EC2 Instance conlose, then choose security group.
 * Copy the ID of the load balancer Security Group 
@@ -133,6 +133,12 @@ Next, we need to edit the security group in such a way that our application load
 
 ![sg](https://github.com/user-attachments/assets/cc1a728a-4e59-4fb4-9f05-f15080834488)
 
+* We have to create two new rules which only allow HTTPS and HTTPS traffic from our load balancer Security Group and not from the whole.
+* Paste the security group ID from application load balancer and click Save.
+
+![sg2](https://github.com/user-attachments/assets/570dd5b0-b7bd-4a77-a8ec-c688551b4c21)
+
+We are now only allowing traffic  from ALB and not from any other source.
 
 
 
