@@ -30,13 +30,12 @@ In the second part, we will utilize Amazon Application Load Balancer (ALB) for e
 The procedure for deploying this architecture on AWS consists of the following steps:
 
 * Step 1. [Create Application Load Balancer on AWS](#alb)
-* Step 2. [Add EC2 security group to only allow traffic from Load Balancer](#ec2-alb)
-* Step 3. [Domain transfer from 3rd party provider](#domain-transfer)
-* Step 4. [Set up Free AWS SSL certificate](#ssl-certificate)
-* Step 5. [Point our domain address to Load Balancer](#domain-to-lb)
+* Step 2. [Domain transfer from 3rd party provider](#domain-provider)
+* Step 3. [Set up Free AWS SSL certificate](#ssl-certificate)
+* Step 4. [Point our domain address to Load Balancer](#domain-to-lb)
 
 
-## <a name="create-ec2-for-wordpress">➡️ Step 1 - Create Application Load Balancer on AWS</a>
+## <a name="alb">➡️ Step 1 - Create Application Load Balancer on AWS</a>
 
 We are going to create an Application Load Balancer to point to our EC2 Instance.
 
@@ -141,5 +140,5 @@ Next, we need to edit the security group in such a way that our application load
 We are now only allowing traffic  from ALB and not from any other source.
 
 
-
+## <a name="domain-provider">➡️ Step 2 - Domain transfer from 3rd party provider</a>
 
