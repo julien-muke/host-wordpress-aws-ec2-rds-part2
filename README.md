@@ -140,5 +140,5 @@ Next, we need to edit the security group in such a way that our application load
 We are now only allowing traffic  from ALB and not from any other source.
 
 
-## <a name="domain-provider">➡️ Step 2 - Domain transfer from 3rd party provider</a>
+## <a name="domain-provider">➡️ Step 2 - Domain transfer from 3rd party provider to AWS</a>
 
