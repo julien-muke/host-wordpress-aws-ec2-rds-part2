@@ -38,3 +38,32 @@ The procedure for deploying this architecture on AWS consists of the following s
 
 ## <a name="create-ec2-for-wordpress">➡️ Step 1 - Create Application Load Balancer on AWS</a>
 
+We are going to create an Application Load Balancer to point to our EC2 Instance.
+
+To configure your load balancer:
+
+1. Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/
+2. In the navigation pane, choose Load Balancers
+3. Choose Create Load Balancer.
+
+![alb1](https://github.com/user-attachments/assets/ebaff0aa-e955-4b27-a87d-ffde95a0d8e9)
+
+
+4. Under Application Load Balancer, choose Create.
+
+![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-17-15_08_53](https://github.com/user-attachments/assets/e15e3606-11b6-4d8b-9a14-6335137a66a9)
+
+
+5. For Load balancer name, enter a name for your load balancer `wp-lb`
+6. For Scheme, choose Internet-facing. An internet-facing load balancer routes requests from clients to targets over the internet.
+7. For IP address type, choose IPv4, Dualstack, or Dualstack without public IPv4. Choose IPv4 if your clients use IPv4 addresses to communicate with the load balancer. Choose Dualstack if your clients use both IPv4 and IPv6 addresses to communicate with the load balancer. Choose Dualstack without public IPv4 if your clients use only IPv6 addresses to communicate with the load balancer.
+
+![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-17-15_40_20](https://github.com/user-attachments/assets/142dd0ac-a08b-4b9a-8c6d-f9bbbaadbdd5)
+
+8. For VPC, select the VPC that you used for your EC2 instances. If you selected Internet-facing for Scheme, only VPCs with an internet gateway are available for selection.
+9. For Mappings, enable zones for your load balancer by selecting Subnets from two or more Availability Zones.
+
+![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-17-15_40_20 copy](https://github.com/user-attachments/assets/4c61b139-077c-4ff4-962c-a6ea0c86c54a)
+
+
+10. 
