@@ -190,9 +190,33 @@ Now, let's add the Name Server record to Hostinger.
 
 ![53-4](https://github.com/user-attachments/assets/7b30b70a-cc5e-4928-bed0-088ba752d2ad)
 
+Next, we will create a record to migrate traffic from `www` to our domain, so if anyone adds `www` in front of your domain, it will not throw error rather it will redirect to your main domain.
+
+* Enter `www` record name, make sure you select record type **A - Routes traffic to an IPv4 address and some AWS resources**
+* Enable Alias
+* Choose **Alias to another record in this hosted zone**
+* Select record created `julienmuke.cloud.` previously and click create record.
+
+![53-5](https://github.com/user-attachments/assets/87a4539b-4886-44a3-ac38-a3ee56c29beb)
 
 
+Now any traffic coming to `www` record will go to load balance at DNS.
 
 
+## <a name="ssl-certificate">➡️ Step 2 - Set up Free AWS SSL certificate</a>
 
+Let's move to AWS Certificate Manager (ACM) to request a Free SSL certificate for our domain.
+
+To request an ACM public certificate (console):
+
+1. In the AWS Management Console and open the ACM console at https://console.aws.amazon.com/acm/home.
+2. Choose Request a certificate.
+3. Choose Request a public certificate, click Next.
+
+![53-6](https://github.com/user-attachments/assets/8e6e8413-1b70-45d9-9ab0-dcd74f1834d5)
+
+4. In the Domain names section, type your domain name, mine is `julienmuke.cloud`
+5. To add another name, choose Add another name to this certificate and type the name in the text box. This is useful for protecting both a bare or apex domain (such as example.com) and its subdomains such as (*.example.com) in my case i will add `*julienmuke.cloud`
+6. In the Validation method section, choose either DNS validation – recommended.
+7. In the Key algorithm section, choose RSA 2048 (default) then click Request.
 
