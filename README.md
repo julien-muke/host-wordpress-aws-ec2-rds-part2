@@ -30,7 +30,7 @@ In the second part, we will utilize Amazon Application Load Balancer (ALB) for e
 The procedure for deploying this architecture on AWS consists of the following steps:
 
 * Step 1. [Create Application Load Balancer on AWS](#alb)
-* Step 2. [Domain transfer from 3rd party provider](#domain-provider)
+* Step 2. [Add a custom domain managed by a third-party DNS provider](#domain-provider)
 * Step 3. [Set up Free AWS SSL certificate](#ssl-certificate)
 * Step 4. [Point our domain address to Load Balancer](#domain-to-lb)
 
@@ -140,5 +140,47 @@ Next, we need to edit the security group in such a way that our application load
 We are now only allowing traffic  from ALB and not from any other source.
 
 
-## <a name="domain-provider">➡️ Step 2 - Domain transfer from 3rd party provider to AWS</a>
+## <a name="domain-provider">➡️ Step 2 - Add a custom domain managed by a third-party DNS provider</a>
+
+If you are not using Amazon Route 53 to manage your domain, you can add a custom domain managed by a third-party DNS provider to your application.
+
+We are going to create a Public Hosted Zone, which is a container that holds information about how you want to route traffic on the internet for a specific domain, such as `example.com`, after you create a hosted zone, you create records that specify how you want to route traffic for the domain and subdomains.
+
+To create a public hosted zone using the Route 53 console:
+
+1. Sign in to the AWS Management Console and open the Route 53 console at https://console.aws.amazon.com/route53/
+2. If you're new to Route 53, choose Get started under DNS management. If you're already using Route 53, choose Hosted zones in the navigation pane.
+3. Choose Create hosted zone.
+
+![route-53-1](https://github.com/user-attachments/assets/f7734f6e-4c48-4f9a-a586-1387cfd09cda)
+
+
+4. In the Create Hosted Zone pane, enter the name of the domain that you want to route traffic for, in my case it's `julienmuke.cloud` which is domain that i purchased from [hostinger.com](www.hostinger.com)
+5. For Type, accept the default value of Public Hosted Zone.
+6. Choose Create.
+
+![Route-53-Global](https://github.com/user-attachments/assets/a87632e9-420a-40b8-aa4c-251d1c62e57f)
+
+Note: By default you will get two records for your domain which are SOA and NS.
+NS stands for Name Server record which determine the location of your domain and help you manage mapping, we have to add this name servers to our domain provider so the provider can know where is your DNS hosted in my case it's [hostinger.com](www.hostinger.com).
+
+Now, let's add the Name Server record to Hostinger. 
+
+* Copy the Name Server value from Route 53.
+
+![53-2](https://github.com/user-attachments/assets/1c7b8db7-1682-4776-a130-699667612f16)
+
+* Paste the Name Server value to DNS Nameservers in Hostinger.
+
+![53-3](https://github.com/user-attachments/assets/790ec3ce-742a-4eb6-8cd1-32fb57f0adee)
+
+
+
+
+
+
+
+7. Create records that specify how you want to route traffic for the domain and subdomains.
+
+
 
