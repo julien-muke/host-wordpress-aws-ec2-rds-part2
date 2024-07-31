@@ -174,13 +174,25 @@ Now, let's add the Name Server record to Hostinger.
 
 ![53-3](https://github.com/user-attachments/assets/790ec3ce-742a-4eb6-8cd1-32fb57f0adee)
 
+* Next, we will Create records that specify how you want to route traffic for the domain, so that when anyone opens our domain URL it will show the WordPress website from the load balancer.
+
+* Click on Create record
+
+![53-3](https://github.com/user-attachments/assets/84e95410-4145-4391-b93b-17dc967846b6)
+
+* Keep the Record name blank 
+* There are various DS record types, make sure to select **A - Routes traffic to an IPv4 address and some AWS resources**
+* Enable Alias
+* Select Alias Alias to Application and Classic Load Balancer.
+* Select your region where you have created your load balancer i will select North Virginia
+* Select our WordPress application load balancer 
+* Keep everything else default and click on create records
+
+![53-4](https://github.com/user-attachments/assets/7b30b70a-cc5e-4928-bed0-088ba752d2ad)
 
 
 
 
-
-
-7. Create records that specify how you want to route traffic for the domain and subdomains.
 
 
 
