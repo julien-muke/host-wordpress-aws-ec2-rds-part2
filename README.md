@@ -220,3 +220,15 @@ To request an ACM public certificate (console):
 6. In the Validation method section, choose either DNS validation – recommended.
 7. In the Key algorithm section, choose RSA 2048 (default) then click Request.
 
+![Request-public-certificate-Certificate-Manager-us-east-1](https://github.com/user-attachments/assets/e90fe1f1-dd6c-4370-8ccc-1e01b5aa0b9a)
+
+8. Click on view certificate, it will be in Pending validation status.(it will take 3-5 minuntes to validate).
+9. Next, click on Create DNS records in Amazon Route 53, which will add records to our host Zone.
+
+![53-7](https://github.com/user-attachments/assets/989128aa-4677-477d-83cf-00fb7d45e32f)
+
+10. Select your Domains, and click Create records.
+
+![53-8](https://github.com/user-attachments/assets/7122fbe7-4ca5-4244-9a80-c5cfb7734f81)
+
+11. 
