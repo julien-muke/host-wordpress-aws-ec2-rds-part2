@@ -232,3 +232,11 @@ To request an ACM public certificate (console):
 ![53-8](https://github.com/user-attachments/assets/7122fbe7-4ca5-4244-9a80-c5cfb7734f81)
 
 
+11. Let's add SSL certificate to our Load Balancer:
+
+a. Go to the ECS conlose, then select Load Balancer, click on the existing one
+b. Under Listeners and rules, click on Add listener
+
+![53-10](https://github.com/user-attachments/assets/e8cce2bf-d031-49cc-9cc5-cf60000b5eef)
+
+
