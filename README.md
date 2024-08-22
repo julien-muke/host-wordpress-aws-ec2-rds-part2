@@ -246,4 +246,14 @@ d. Select the Target group `wp-site-TG`
 ![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-18-12_26_44 copy](https://github.com/user-attachments/assets/36e137e9-3ea1-4428-ba38-68abb11ce98d)
 
 
-e. 
+e. Under Default SSL/TLS server certificate, select the certificate that will be applied as the default SSL/TLS server certificate for this load balancer's secure listeners.
+f. Keep everything as default and click Add
+
+![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-18-12_26_44 copy 2](https://github.com/user-attachments/assets/240d7e93-9b7a-45e2-ad69-b280c6a5b36a)
+
+Next, let's redirect all traffic coming from HTTP to HTTPS.
+
+1. Go to EC2 console, then Load Balancer and select the `wp-lb`
+2. Under Listeners and rules select `HTTP:80`, click on Edit Rules
+
+![3242](https://github.com/user-attachments/assets/d4791833-3d0e-438a-8fdb-b67df4b1e713)
