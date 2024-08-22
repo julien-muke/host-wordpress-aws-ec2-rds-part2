@@ -239,4 +239,11 @@ b. Under Listeners and rules, click on Add listener
 
 ![53-10](https://github.com/user-attachments/assets/e8cce2bf-d031-49cc-9cc5-cf60000b5eef)
 
+c. Select `HTTPS` as Protocol, and the Port will be 443.
+d. Select the Target group `wp-site-TG`
 
+
+![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-18-12_26_44 copy](https://github.com/user-attachments/assets/36e137e9-3ea1-4428-ba38-68abb11ce98d)
+
+
+e. 
