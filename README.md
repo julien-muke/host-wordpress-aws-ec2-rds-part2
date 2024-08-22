@@ -257,3 +257,9 @@ Next, let's redirect all traffic coming from HTTP to HTTPS.
 2. Under Listeners and rules select `HTTP:80`, click on Edit Rules
 
 ![3242](https://github.com/user-attachments/assets/d4791833-3d0e-438a-8fdb-b67df4b1e713)
+
+3. Select Default rules, go to Actions and select Edit rule
+
+![6545](https://github.com/user-attachments/assets/b53c6f3b-e1dc-4d52-be11-3aa8b89009f2)
+
+
