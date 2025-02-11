@@ -298,6 +298,8 @@ Note: This code will tell the server to use `HTTPS` protocole, make sure you cha
 
 - Once you are done, to save the change and exit vim editor, type `Esc` key then type `:wq`
 
+![Image](https://github.com/user-attachments/assets/608730be-a4c1-49b2-9f08-29394916366b)
+
 Let's test our website
 
 
