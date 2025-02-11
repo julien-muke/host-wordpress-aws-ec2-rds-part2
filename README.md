@@ -302,6 +302,8 @@ Note: This code will tell the server to use `HTTPS` protocole, make sure you cha
 
 Let's test our website
 
+As shown below, the website is operational, featuring an Amazon Application Load Balancer connected to the domain name through Amazon Route 53, along with a secure SSL certificate.  
+
 
 
 
