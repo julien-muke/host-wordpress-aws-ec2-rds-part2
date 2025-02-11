@@ -268,3 +268,29 @@ Next, let's redirect all traffic coming from HTTP to HTTPS.
 ![Image](https://github.com/user-attachments/assets/a3dde6ab-186a-47f9-8640-916ad114931c)
 
 
+Before we test our website, let's edit the `wp-config.php` to allow proper `HTTPS` request
+
+- Go back to your EC2 instance console, select your instance `wp-instance`
+- Click on "Connect", choose "EC2 instance connect" then click "Connect" 
+- Change the directory to access the website, run the following command:
+
+```bash
+cd /var/www/html/
+```
+
+- To edit `wp-config.php` let's use vim editor, run the following command:
+
+```bash
+sudo vim wp-config.php
+```
+- To edit in vim editor type `i` key to enter into insert mode.
+- Then paste the code below:
+
+```bash
+if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
+    $_SERVER['HTTPS']='on';
+
+define( 'WP_HOME', 'http://aws-ninjas.me' );
+define( 'WP_SITEURL', 'http://aws-ninjas.me' );
+```
+
