@@ -298,5 +298,8 @@ Note: This code will tell the server to use `HTTPS` protocole, make sure you cha
 
 - Once you are done, to save the change and exit vim editor, type `Esc` key then type `:wq`
 
+Let's test our website
+
+
 
 
