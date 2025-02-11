@@ -262,4 +262,9 @@ Next, let's redirect all traffic coming from HTTP to HTTPS.
 
 ![6545](https://github.com/user-attachments/assets/b53c6f3b-e1dc-4d52-be11-3aa8b89009f2)
 
+4. Under Routing actions, select "Redirect to URL"
+5. Keep "Protocol" as `HTTPS` and enter "Port" = `443` then click "Save changes"
+
+![Image](https://github.com/user-attachments/assets/a3dde6ab-186a-47f9-8640-916ad114931c)
+
 
