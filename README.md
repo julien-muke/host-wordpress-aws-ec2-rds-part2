@@ -290,7 +290,13 @@ sudo vim wp-config.php
 if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
     $_SERVER['HTTPS']='on';
 
-define( 'WP_HOME', 'http://aws-ninjas.me' );
-define( 'WP_SITEURL', 'http://aws-ninjas.me' );
+define( 'WP_HOME', 'http://YOUR-DOMAIN-NAME' );
+define( 'WP_SITEURL', 'http://YOUR-DOMAIN-NAME' );
 ```
+
+Note: This code will tell the server to use `HTTPS` protocole, make sure you change the URL to your own domain name.
+
+- Once you are done, to save the change and exit vim editor, type `Esc` key then type `:wq`
+
+
 
