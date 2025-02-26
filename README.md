@@ -1,6 +1,31 @@
 # ![aws](https://github.com/julien-muke/Search-Engine-Website-using-AWS/assets/110755734/01cd6124-8014-4baa-a5fe-bd227844d263) How to Deploy WordPress Website on AWS using EC2, RDS, ALB and more (Part2).
 
 
+<div align="center">
+
+  <br />
+    <a href="https://youtu.be/6EWZsGdF90I" target="_blank">
+      <img src="https://github.com/user-attachments/assets/1d4fa91d-2efd-46f8-b8c4-bbd834f4dbfc" alt="Project Banner">
+    </a>
+  <br />
+
+<h3 align="center">How to Deploy WordPress Website on AWS using EC2</h3>
+
+   <div align="center">
+     Build this hands-on demo step by step with my detailed tutorial on <a href="http://www.youtube.com/@julienmuke/videos" target="_blank"><b>Julien Muke</b></a> YouTube. Feel free to subscribe 🔔!
+    </div>
+</div>
+
+## 🚨 Tutorial
+
+This repository contains the steps corresponding to an in-depth tutorial available on our YouTube
+channel, <a href="http://www.youtube.com/@julienmuke/videos" target="_blank"><b>Julien Muke</b></a>.
+
+If you prefer visual learning, this is the perfect resource for you. Follow my tutorial to learn how to build projects
+like these step-by-step in a beginner-friendly manner!
+
+<a href="https://youtu.be/6EWZsGdF90I" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+
 ## <a name="introduction">🤖 Introduction</a>
 
 Welcome to Part 2 of our tutorial on deploying a WordPress website on AWS! In the first part, we set up our WordPress site using Amazon EC2 for hosting and Amazon RDS for the database. Now, we’re going to take it a step further by improving scalability, reliability, and performance.
