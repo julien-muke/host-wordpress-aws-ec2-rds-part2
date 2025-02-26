@@ -3,9 +3,9 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-This demo is the the second part of the tutorial on Deploying a WordPress website on AWS. In the first part we covered Amazon EC2 for hosting, Amazon RDS for database management.
+Welcome to Part 2 of our tutorial on deploying a WordPress website on AWS! In the first part, we set up our WordPress site using Amazon EC2 for hosting and Amazon RDS for the database. Now, we’re going to take it a step further by improving scalability, reliability, and performance.
 
-In the second part, we will utilize Amazon Application Load Balancer (ALB) for efficient traffic distribution, Amazon Route 53 for domain name management and DNS routing and get a free SSL certificate and point our domain address to Load Balancer. This comprehensive approach not only simplifies the deployment process but also equips your WordPress site with the robust infrastructure needed to handle varying levels of traffic, ensuring optimal performance and uptime.
+In the second part, we’ll configure an Amazon Application Load Balancer (ALB) to efficiently distribute incoming traffic across multiple EC2 instances efficiently, ensuring high availability and fault tolerance. We’ll also integrate Amazon Route 53, AWS’s powerful DNS service, to manage our domain and route traffic to our WordPress application smoothly, lastly, we will secure our website with a free SSL certificate by using Amazon certificate manager.
 
 
 ## <a name="design">📐 Architecture Diagram</a>
