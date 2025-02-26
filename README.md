@@ -317,9 +317,13 @@ Note: This code will tell the server to use `HTTPS` protocole, make sure you cha
 
 ![Image](https://github.com/user-attachments/assets/608730be-a4c1-49b2-9f08-29394916366b)
 
-Let's test our website
+To test the website, enter your domain name in the URL bar. You should be able to see your new WordPress site.
 
-As shown below, the website is operational, featuring an Amazon Application Load Balancer connected to the domain name through Amazon Route 53, along with a secure SSL certificate.  
+🏆 You have successfully set up a WordPress website on AWS. It features an Amazon Application Load Balancer connected to the domain name through Amazon Route 53 and a secure SSL certificate.
+
+## 💰 Cost
+
+All services used are eligible for the AWS Free Tier. However, charges will incur at some point so it's recommended that you shut down resources after completing this tutorial.
 
 
 
