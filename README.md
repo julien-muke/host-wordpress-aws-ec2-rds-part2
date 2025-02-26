@@ -50,7 +50,6 @@ The procedure for deploying this architecture on AWS consists of the following s
 * Step 1. [Create Application Load Balancer on AWS](#alb)
 * Step 2. [Add a custom domain managed by a third-party DNS provider](#domain-provider)
 * Step 3. [Set up Free AWS SSL certificate](#ssl-certificate)
-* Step 4. [Point our domain address to Load Balancer](#domain-to-lb)
 
 
 ## <a name="alb">➡️ Step 1 - Create Application Load Balancer on AWS</a>
